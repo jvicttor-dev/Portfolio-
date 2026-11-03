@@ -249,11 +249,76 @@ html, body {
   overflow: hidden;
 }
 
-.thumb { height: 150px; }
+.thumb { height: 150px; background-size: cover; background-position: center; position: relative; overflow: hidden; }
 .t1 { background: linear-gradient(135deg, #1e3a32, #2f6b5a 40%, #c9d7c4); }
 .t2 { background: linear-gradient(135deg, #243044, #3d5a80 45%, #d5c4a1); }
 .t3 { background: linear-gradient(135deg, #2a2438, #5a3d80 45%, #c4c9d7); }
 .t4 { background: linear-gradient(135deg, #1e2a32, #2f5a6b 40%, #d7c4c4); }
+/* Projeto em destaque: card de largura total com preview nítido */
+.project-featured { grid-column: 1 / -1; }
+
+.project-media {
+  display: block;
+  overflow: hidden;
+  background: #0f1629;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.001);
+  transition: transform 0.45s ease;
+}
+
+.project-featured:hover .project-media img { transform: scale(1.02); }
+
+.project-featured .project-body { padding: 18px 20px 20px; }
+.project-featured h3 { font-size: 18px; margin-bottom: 8px; }
+.project-featured p { font-size: 14px; line-height: 1.6; }
+
+.featured-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(78, 163, 255, 0.14);
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin-top: 14px;
+}
+
+.project-tags li {
+  background: #243044;
+  border-radius: 999px;
+  padding: 5px 11px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #c9d4e8;
+}
+
+.project-actions { align-items: center; }
+.ghost.primary {
+  background: var(--blue);
+  color: #06121f;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 999px;
+  margin-top: 16px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.ghost.primary:hover { background: #6fb6ff; transform: translateY(-1px); }
 
 .project-body { padding: 14px 14px 16px; }
 .project h3 { font-size: 15px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.03em; }
