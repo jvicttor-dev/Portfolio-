@@ -146,6 +146,7 @@
                   <li>Modelagem de Dados</li>
                 </ul>
                 <div class="project-actions">
+                  <button class="ghost details-btn" type="button" data-open="detalhes-01">Ver detalhes do projeto</button>
                   <a class="ghost primary" href="https://app.powerbi.com/view?r=eyJrIjoiNjQzY2MxOGEtZTA5Ny00YTIxLWI5NzEtZmVhMTFhNjkyMTAyIiwidCI6ImMwNWY4NjQ5LWI5MjEtNDdkZi1hZjM0LTY4YTE4ZTc3MjU4NiJ9" target="_blank" rel="noopener noreferrer">Ver dashboard ao vivo →</a>
                 </div>
               </div>
@@ -164,6 +165,7 @@
                   <li>Storytelling de Dados</li>
                 </ul>
                 <div class="project-actions">
+                  <button class="ghost details-btn" type="button" data-open="detalhes-02">Ver detalhes do projeto</button>
                   <a class="ghost primary" href="https://app.powerbi.com/view?r=eyJrIjoiNGE4ZjY3YmYtNzg1YS00MWExLWFiYzctZTFhNzgxOGYxMzI0IiwidCI6ImMwNWY4NjQ5LWI5MjEtNDdkZi1hZjM0LTY4YTE4ZTc3MjU4NiJ9" target="_blank" rel="noopener noreferrer">Ver dashboard ao vivo →</a>
                 </div>
               </div>
@@ -182,6 +184,7 @@
                   <li>Modelagem de Dados</li>
                 </ul>
                 <div class="project-actions">
+                  <button class="ghost details-btn" type="button" data-open="detalhes-03">Ver detalhes do projeto</button>
                   <a class="ghost primary" href="https://app.powerbi.com/view?r=eyJrIjoiZDhjN2EwNDMtMjE3MS00NTVhLWExM2ItNjcwZTEwZWFlOTFkIiwidCI6ImMwNWY4NjQ5LWI5MjEtNDdkZi1hZjM0LTY4YTE4ZTc3MjU4NiJ9" target="_blank" rel="noopener noreferrer">Ver dashboard ao vivo →</a>
                 </div>
               </div>
@@ -235,6 +238,135 @@
       </section>
     </div>
   </main>
+  <dialog class="modal" id="detalhes-01" aria-labelledby="detalhes-01-titulo">
+    <div class="modal-head">
+      <div>
+        <span class="modal-kicker">Power BI · Projeto 01</span>
+        <h2 id="detalhes-01-titulo">Dashboard de Vendas Globais</h2>
+      </div>
+      <button class="modal-close" type="button" data-close aria-label="Fechar detalhes">×</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-lead">Um raio-x do desempenho comercial global, montado para responder em segundos onde a receita está concentrada — e onde ela está sendo perdida.</p>
+
+      <h3>O desafio</h3>
+      <p>A base reúne vendas de diversos países, três perfis de cliente (Consumidor, Corporativo e Home Office) e um histórico de 2011 a 2014. Sem uma camada analítica, comparar períodos e isolar os mercados mais rentáveis exigia trabalho manual em planilha, com risco de erro e sem padronização de cálculo.</p>
+
+      <h3>O que o painel entrega</h3>
+      <ul>
+        <li><strong>Comparativo ano a ano automático:</strong> o crescimento de +271,2% frente ao ano anterior aparece calculado e ao lado do valor absoluto, sem retrabalho.</li>
+        <li><strong>KPIs consolidados:</strong> vendas totais de 12,64 Mi e ticket médio de 504,99 em destaque.</li>
+        <li><strong>Receita por categoria com participação:</strong> Suprimentos responde por 31,27 Mi (60,97% do total), seguida por Tecnologia (10,14 Mi / 19,77%) e Móveis (9,88 Mi / 19,26%).</li>
+        <li><strong>Pedidos por região:</strong> leitura da concentração geográfica da receita, com mercados como a Califórnia somando 0,46 Mi.</li>
+        <li><strong>Pedidos por país com criticidade:</strong> barras segmentadas em Alto, Médio, Baixo e Crítico, para priorizar mercado por esforço comercial.</li>
+        <li><strong>Média de desconto por subcategoria:</strong> evidencia onde a política comercial pesa mais no resultado (Tables, Binders, Machines, Chairs, Bookcases, Furnishings, Phones, Appliances, Fasteners, Storage, Envelopes, Supplies e Accessories).</li>
+      </ul>
+
+      <h3>Decisões que ele apoia</h3>
+      <ul>
+        <li>Em quais mercados concentrar esforço de vendas no próximo ciclo.</li>
+        <li>Qual categoria sustenta o faturamento e quais são complementares.</li>
+        <li>Onde o desconto está consumindo margem sem gerar volume proporcional.</li>
+      </ul>
+
+      <div class="modal-facts">
+        <div><span>Ferramenta</span><strong>Power BI</strong></div>
+        <div><span>Período analisado</span><strong>2011 a 2014</strong></div>
+        <div><span>Filtros</span><strong>Ano/Mês · Segmento · País</strong></div>
+        <div><span>Técnicas</span><strong>DAX · Power Query · modelagem</strong></div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <a class="ghost primary" href="https://app.powerbi.com/view?r=eyJrIjoiNjQzY2MxOGEtZTA5Ny00YTIxLWI5NzEtZmVhMTFhNjkyMTAyIiwidCI6ImMwNWY4NjQ5LWI5MjEtNDdkZi1hZjM0LTY4YTE4ZTc3MjU4NiJ9" target="_blank" rel="noopener noreferrer">Abrir dashboard ao vivo →</a>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="detalhes-02" aria-labelledby="detalhes-02-titulo">
+    <div class="modal-head">
+      <div>
+        <span class="modal-kicker">Power BI · Projeto 02</span>
+        <h2 id="detalhes-02-titulo">Dashboard Comercial — Desempenho de Vendas</h2>
+      </div>
+      <button class="modal-close" type="button" data-close aria-label="Fechar detalhes">×</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-lead">A visão executiva do dia a dia comercial: quatro indicadores e dois recortes que explicam de onde vem o resultado do período.</p>
+
+      <h3>O desafio</h3>
+      <p>Receita, volume, ticket e pedidos viviam em controles separados. Isso impedia responder rápido a uma pergunta simples e decisiva: o crescimento do período veio de vender mais ou de vender mais caro? Sem essa resposta, a conversa sobre meta e precificação fica no achismo.</p>
+
+      <h3>O que o painel entrega</h3>
+      <ul>
+        <li><strong>Quatro KPIs com comparativo frente ao período anterior:</strong> Receita Total de 22 Mi (+19,3%), Quantidade de Vendas de 5 Mil (+18,7%), Ticket Médio de 4 Mil (+0,6%) e Total de Pedidos de 63 Mi (+18,6%).</li>
+        <li><strong>Receita por produto em visão de composição:</strong> Cadeira, Headset, Impressora, Monitor, Mouse, Notebook, Teclado e Webcam, mostrando o peso de cada item no faturamento.</li>
+        <li><strong>Evolução mês a mês da receita</strong>, de jan/2026 a jun/2026, para leitura de tendência e sazonalidade.</li>
+        <li><strong>Filtros por categoria de mercado:</strong> Eletrônicos, Escritório, Móveis e Periféricos, permitindo isolar cada frente de negócio.</li>
+      </ul>
+
+      <h3>A leitura que o painel provoca</h3>
+      <p>O contraste entre receita (+19,3%) e ticket médio (+0,6%) mostra que o crescimento foi puxado por volume, não por preço. É o tipo de leitura que muda a decisão: em vez de revisar preço, o foco vai para capacidade de atendimento, mix e produtividade.</p>
+
+      <h3>Decisões que ele apoia</h3>
+      <ul>
+        <li>Se o crescimento é saudável ou depende de descontos e volume.</li>
+        <li>Quais produtos e categorias merecem mais espaço no mix.</li>
+        <li>Como distribuir meta entre as frentes de mercado.</li>
+      </ul>
+
+      <div class="modal-facts">
+        <div><span>Ferramenta</span><strong>Power BI</strong></div>
+        <div><span>Janela de análise</span><strong>jan/2026 a jun/2026</strong></div>
+        <div><span>Filtros</span><strong>Categoria de mercado</strong></div>
+        <div><span>Técnicas</span><strong>DAX · KPIs com comparativo · storytelling</strong></div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <a class="ghost primary" href="https://app.powerbi.com/view?r=eyJrIjoiNGE4ZjY3YmYtNzg1YS00MWExLWFiYzctZTFhNzgxOGYxMzI0IiwidCI6ImMwNWY4NjQ5LWI5MjEtNDdkZi1hZjM0LTY4YTE4ZTc3MjU4NiJ9" target="_blank" rel="noopener noreferrer">Abrir dashboard ao vivo →</a>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="detalhes-03" aria-labelledby="detalhes-03-titulo">
+    <div class="modal-head">
+      <div>
+        <span class="modal-kicker">Power BI + SQL · Projeto 03</span>
+        <h2 id="detalhes-03-titulo">Dashboard de Vendas — Análise com SQL</h2>
+      </div>
+      <button class="modal-close" type="button" data-close aria-label="Fechar detalhes">×</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-lead">Aqui o trabalho começa antes do gráfico: os dados saem de uma base relacional consultada com SQL e chegam ao Power BI prontos para medir performance do time comercial.</p>
+
+      <h3>O desafio</h3>
+      <p>As informações de vendas, produtos, vendedores e clientes estavam distribuídas em tabelas relacionais. Para responder perguntas de performance individual e de crescimento, era necessário cruzar essas tabelas e garantir que os filtros de período não distorcessem a comparação — um crescimento aparente pode ser só efeito de janela de datas diferente.</p>
+
+      <h3>O que o painel entrega</h3>
+      <ul>
+        <li><strong>Indicadores do período (jan/2025 a set/2026):</strong> faturamento de R$ 9,97 Mi, 2,0 mil vendas, ticket médio de R$ 4,97 mil e 190 clientes ativos.</li>
+        <li><strong>Crescimento de 31,9% na comparação jan–set contra jan–set:</strong> recorte que isola o efeito de sazonalidade e compara períodos equivalentes.</li>
+        <li><strong>Evolução do faturamento por trimestre</strong>, com duas séries sobrepostas para comparação direta entre períodos.</li>
+        <li><strong>Vendas por categoria:</strong> Monitores, Móveis, Periféricos, Áudio e Eletrônicos, evidenciando a concentração do resultado.</li>
+        <li><strong>Ranking dos 5 melhores vendedores:</strong> Lucas Almeida, Fernanda Costa, Rafael Mendes, Marcos Henrique e Juliana Rocha, com leitura de produtividade individual.</li>
+      </ul>
+
+      <h3>Decisões que ele apoia</h3>
+      <ul>
+        <li>Quem reconhecer e quem precisa de acompanhamento próximo.</li>
+        <li>Como distribuir carteira e meta entre o time.</li>
+        <li>Onde o mix de produtos precisa mudar para sustentar o crescimento.</li>
+      </ul>
+
+      <div class="modal-facts">
+        <div><span>Ferramentas</span><strong>Power BI + SQL</strong></div>
+        <div><span>Período</span><strong>jan/2025 a set/2026</strong></div>
+        <div><span>Comparativo</span><strong>jan–set vs jan–set</strong></div>
+        <div><span>Técnicas</span><strong>SQL · DAX · modelagem relacional</strong></div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <a class="ghost primary" href="https://app.powerbi.com/view?r=eyJrIjoiZDhjN2EwNDMtMjE3MS00NTVhLWExM2ItNjcwZTEwZWFlOTFkIiwidCI6ImMwNWY4NjQ5LWI5MjEtNDdkZi1hZjM0LTY4YTE4ZTc3MjU4NiJ9" target="_blank" rel="noopener noreferrer">Abrir dashboard ao vivo →</a>
+    </div>
+  </dialog>
+
   <script src="script.js"></script>
 </body>
 </html>
