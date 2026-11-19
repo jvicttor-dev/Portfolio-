@@ -219,6 +219,23 @@ html, body {
 .timeline strong { display: block; font-size: 14px; }
 .muted { color: var(--muted); font-size: 13px; }
 
+.badge-cert {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 -10px;
+  border-radius: 14px;
+  transition: background 0.2s ease;
+}
+.badge-cert:hover { background: #1c2331; }
+.badge-cert img { width: 88px; height: 88px; flex: none; object-fit: contain; }
+.badge-copy { display: grid; gap: 3px; }
+.badge-copy strong { font-size: 14px; }
+.badge-link { color: var(--blue); font-size: 13px; font-weight: 600; }
+
 .creds .cred-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
