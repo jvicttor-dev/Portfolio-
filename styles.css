@@ -275,6 +275,19 @@ html, body {
 /* Projeto em destaque: card de largura total com preview nítido */
 .project-featured { grid-column: 1 / -1; }
 
+/* Cartões dos projetos reais: mesmo tamanho dos cartões pequenos, texto de até 4 linhas */
+.project-real { display: flex; flex-direction: column; }
+.project-real .project-media img { aspect-ratio: 16 / 9; object-fit: cover; }
+.project-real .project-body { display: flex; flex-direction: column; flex: 1; }
+.project-real p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.project-real .project-actions { margin-top: auto; flex-wrap: wrap; gap: 10px; }
+
 .project-media {
   display: block;
   overflow: hidden;
